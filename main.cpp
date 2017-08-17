@@ -57,5 +57,7 @@ int main(int argc, char **argv)
   output_mat(mat2.transpose());
   output_mat(mat3.transpose());
 
+  cout << "commit github" << endl;
+
   return 0;
 }
