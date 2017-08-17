@@ -1,0 +1,13 @@
+.PHONY: all
+all: main.o mymat.o
+	g++ -Wall -O2 -o main main.o mymat.o
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+mymat.o: mymat.cpp
+	g++ -c mymat.cpp
+
+.PHONY: clean
+clean:
+	rm -f main main.o mymat.o
